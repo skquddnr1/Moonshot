@@ -20,6 +20,38 @@
             </a>
           </h1>
         </div>
+           <!-- 로그인 전 -->
+        <div id="login" class="login_wrap ">
+            <div class="login">
+              <form id="login_process" autocomplete="off" method = "post" action="login_check">
+				<input type="hidden" name="standard" value="index.html">
+				<input type="hidden" name="login_token"  value="">
+                <fieldset>
+                  <legend class="blind">로그인</legend>
+                  <div class="login_input">
+                    <div class="input_box">
+                      <label for="user_id" id="idLabel" class="lab_login"></label>
+                      <input type="text" id="user_id" name="user_id" class="inp_txt" maxlength="50"  value="">
+                    </div>
+                    <div class="input_box">
+                      <label for="pw" id="pwdLabel" class="lab_login">비밀번호</label>
+                      <input type="password" id="pw" name="pw" class="inp_txt" maxlength="32" >
+                    </div>
+                  </div>
+				  <div class="login_set">
+                    <div class="check_id">
+                      <span class="checkbox">
+                        <input type="checkbox" id="idsave" class="ico_check" name="id_cookie">
+                        <em class="checkmark"></em>
+                        <label for="idsave"><em class="interval">ID</em> 저장</label>
+                      </span>
+                    </div>
+				    <button type="button" id="login_ok" class="btn_inout login">로그인</button>
+                  </div>
+                </fieldset>
+              </form>
+			
+        <!-- 로그인 후 -->
         <nav id="gnb">
           <ul class="groupNav">
             <li class="navItem"><a href="#">ABOUT MS</a></li>
