@@ -1,0 +1,25 @@
+body {
+  padding: 0 0 0 0;
+  background-color: #ffffff;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none
+}
+a:link, a:visited, a:hover, a:active {
+  color : white;
+}
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+#header {
+  position: relative;
+}
