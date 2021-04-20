@@ -1,0 +1,83 @@
+.wrapper {
+  width : 1170px;
+  margin: 0 auto;
+}
+.logo {
+  margin: 0%;
+}
+.logoImage {
+  position : relative;
+  witdh : 300px;
+  height : 100px;
+}
+#gnb {
+  display :block;
+  position: relative;
+  padding: 0 0 0 0;
+  border-radius : 18px;
+  background-color: #262626;
+  width: 1170px;
+}
+.groupNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0%;
+  padding: 0 0 0 0;
+  width: 790px;
+  height: 70px;
+}
+.navItem {
+  flex-grow: 1;
+  font-size: 15px;
+  text-align: center;
+}
+.snsNav {
+
+}
+.container {
+  display: flex;
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  border: 2px solid white;
+}
+.contentLeft {
+  margin: none;
+  padding: 0 0 0 0;
+  border: 2px solid red;
+  width: 900px;
+}
+.leagueBanner {
+  position: relative;
+  border:2px solid green;
+  width: 900px;
+  height: 200px;
+}
+.leagueBanner a img {
+  position: absolute;
+  left:0;
+}
+.calender {
+  margin-bottom: 30px;
+  border: 2px solid blue;
+  width: 900px;
+  height: 600px;
+}
+.boards {
+  display: flex;
+  border: 2px solid yellow;
+  width: 900px;
+  height: 400px;
+}
+.contentRight {
+  margin: none;
+  padding: 0 0 0 0;
+  border: 2px solid orange;
+  width: 300px;
+}
+.loginArea {
+  border: 2px solid skyblue;
+  width: 300px;
+  height:200px;
+}
