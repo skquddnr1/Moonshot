@@ -1,5 +1,5 @@
 .wrapper {
-  width : 1170px;
+  width : 1200px;
   margin: 0 auto;
 }
 .logo {
@@ -16,7 +16,7 @@
   padding: 0 0 0 0;
   border-radius : 18px;
   background-color: #262626;
-  width: 1170px;
+  width: 1200px;
 }
 .groupNav {
   display: flex;
@@ -24,7 +24,7 @@
   justify-content: flex-start;
   margin: 0%;
   padding: 0 0 0 0;
-  width: 790px;
+  width: 800px;
   height: 70px;
 }
 .navItem {
@@ -38,46 +38,23 @@
 .container {
   display: flex;
   position: relative;
-  width: 1170px;
+  align-items : flex-start;
+  width: 1200px;
   margin: 0 auto;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 .contentLeft {
-  margin: none;
-  padding: 0 0 0 0;
-  border: 2px solid red;
-  width: 900px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
 }
 .leagueBanner {
-  position: relative;
-  border:2px solid green;
-  width: 900px;
-  height: 200px;
+  flex: none;
 }
-.leagueBanner a img {
-  position: absolute;
-  left:0;
-}
-.calender {
-  margin-bottom: 30px;
-  border: 2px solid blue;
-  width: 900px;
-  height: 600px;
-}
-.boards {
-  display: flex;
-  border: 2px solid yellow;
-  width: 900px;
-  height: 400px;
+.bannerSlide {
+
 }
 .contentRight {
-  margin: none;
-  padding: 0 0 0 0;
-  border: 2px solid orange;
-  width: 300px;
-}
-.loginArea {
-  border: 2px solid skyblue;
-  width: 300px;
-  height:200px;
+  display : flex;
+  flex-grow: 1;
 }
