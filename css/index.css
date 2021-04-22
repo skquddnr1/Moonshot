@@ -58,6 +58,10 @@
   height: auto;
   object-fit: cover;
 }
+.boards {
+  width: 100%;
+  border: 2px solid black;
+}
 .contentRight {
   grid-column: 10/13;
   display : flex;
