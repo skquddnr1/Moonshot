@@ -7,7 +7,7 @@
 }
 .logoImage {
   position : relative;
-  witdh : 300px;
+  width : 300px;
   height : 100px;
 }
 #gnb {
@@ -32,6 +32,9 @@
   font-size: 15px;
   text-align: center;
 }
+.navItem > a:link, .navItem > a:visited, .navItem > a:hover, .navItem > a:active {
+  color:white;
+}
 .snsNav {
 
 }
@@ -45,13 +48,17 @@
 }
 .contentLeft {
   grid-column: 1/10;
-  display: flex;
-  flex-direction: column;
   border: 2px solid black;
 }
 .leagueBanner {
   display: inline;
   flex: none;
+  margin: 0%;
+  border: 0%;
+}
+.leagueBanner > a {
+  margin: 0%;
+  border: 0%;
 }
 .bannerSlide {
   width: 100%;
@@ -60,10 +67,46 @@
 }
 .boards {
   width: 100%;
-  border: 2px solid black;
+  margin-top: 5px;
+}
+.groupBoardsNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0%;
+  padding: 0 0 0 0;
+  width: 470px;
+  height: 60px;
+}
+.boardsNavItem {
+  flex-grow: 1;
+  font-size: 20px;
+  text-align: center;
+}
+.boardsNavItem > a:link, .boardsNavItem > a:visited, .boardsNavItem > a:hover, .boardsNavItem > a:active {
+  color:black;
+}
+.boardsContent {
+
 }
 .contentRight {
   grid-column: 10/13;
-  display : flex;
   border: 2px solid black;
+}
+.loginArea {
+  witdh: 100%;
+  height: 300px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+.contentHolder {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+.footer {
+
 }

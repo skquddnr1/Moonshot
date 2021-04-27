@@ -9,9 +9,6 @@ ul {
 a {
   text-decoration: none
 }
-a:link, a:visited, a:hover, a:active {
-  color : white;
-}
 img {
   object-fit: cover;
 }
