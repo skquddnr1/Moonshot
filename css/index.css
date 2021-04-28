@@ -44,11 +44,9 @@
   grid-gap: 10px;
   width: 1200px;
   margin: 0 auto;
-  border: 2px solid black;
 }
 .contentLeft {
   grid-column: 1/10;
-  border: 2px solid black;
 }
 .leagueBanner {
   display: inline;
@@ -69,6 +67,9 @@
   width: 100%;
   margin-top: 5px;
 }
+.boardsNav {
+  border-bottom: 2px solid #b2b2b2;
+}
 .groupBoardsNav {
   display: flex;
   align-items: center;
@@ -83,7 +84,10 @@
   font-size: 20px;
   text-align: center;
 }
-.boardsNavItem > a:link, .boardsNavItem > a:visited, .boardsNavItem > a:hover, .boardsNavItem > a:active {
+.boardsNavItem > a:link, .boardsNavItem > a:visited {
+  color:#b2b2b2;
+}
+.boardsNavItem > a:hover, .boardsNavItem > a:active {
   color:black;
 }
 .boardsContent {
@@ -91,7 +95,6 @@
 }
 .contentRight {
   grid-column: 10/13;
-  border: 2px solid black;
 }
 .loginArea {
   witdh: 100%;
