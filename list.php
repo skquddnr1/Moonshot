@@ -1,30 +1,6 @@
 <?php 
-	session_start();
-	if (isset($_SESSION["userid"])) {
-		$userid = $_SESSION["userid"];
-	}else{
-		$userid = "";
-	}if (isset($_SESSION["username"])){
-		$username = $_SESSION["username"];
-	}else{
-		$username = "";
-	}if (isset($_SESSION["role"])){ // 사용자, 관리자 구분 용도
-		$role = $_SESSION["role"];
-	}else{
-		$role = "";
-	}
-
-	$db_id="root";
-	$db_pw="070617";
-	$db_name="bbs2";
-	$db_domain="localhost";
-	$db=mysqli_connect($db_domain,$db_id,$db_pw,$db_name);
-	
-	// 페이징, 조회수 처리 등 코드 간소화를 위해 사용할 함수
-	function mq($sql){
-		global $db;
-		return $db->query($sql);
-	}
+	include_once "./config.php";
+	include_once "./db/db_con.php";
 	
 	// 현재 페이지 번호를 확인
 	if (isset($_GET["page"]))
@@ -33,16 +9,16 @@
 		$page = 1;
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 	<head>
-		<?php include_once "./fragments/head.php";?>
-	
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 	 <title>MOONSHOT e-sports</title>
+ 	 <link rel="stylesheet" href="./css/index.css">
+  	<link rel="stylesheet" href="./style.css">
 	</head>
 	<body>
-		<!-- 표준 네비게이션 바 (화면 상단에 위치, 화면에 의존하여 확대 및 축소) -->
-		<nav class="navbar navbar-default">
-			<?php include_once "./fragments/header.php";?>
-		</nav>
 		<!-- 비밀 글 모달창 양식 구현-->
 		<div class="modal fade" id="modal_div">
 			<div class="modal-dialog">
@@ -67,7 +43,7 @@
 		<div class="container">
 			<div id="board_area"> 
 			  <h1><b>자유게시판</b></h1><br>
-			  <h4>커뮤니티</h4><br>
+			  <h4>자유롭게 글을 쓸 수 있는 게시판입니다.</h4><br>
 			  <table class="table table-striped" style="text-align: center; border: 1px solid #ddddda">
 			  	<tr>
 					<th style="background-color: #eeeeee; text-align: center;">번호</th>
@@ -221,7 +197,7 @@
 					$(location).attr("href",action_url);
 			    }
 				$("#modal_div").modal();
-				<!-- 주소에 data-idx(idx)값을 더하기 -->
+				//<!-- 주소에 data-idx(idx)값을 더하기 -->
 				var action_url = $("#modal_form").attr("data-action")+$(this).attr("data-idx");
 				$("#modal_form").attr("action",action_url);
 			});

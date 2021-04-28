@@ -2,7 +2,7 @@
     $id   = $_POST['id'];
     $pass = $_POST['pass']; 
     
- $con = mysqli_connect("localhost", "root", "070617", "bbs2");
+ $con = mysqli_connect("localhost", "root", "070617", "bbs");
    $sql = "SELECT * 
    		   FROM user 
            WHERE id='$id'
