@@ -95,17 +95,21 @@
                       </fieldset>
                     </form>     -->
                   <!-- 로그인 후 -->
-                    <div class="container"> 
+                    <div class="loginInput">
                       <form name="loginSbmt" id="loginSbmt" method="post" action="loginOk.php">
                         <h3 class="hidden">로그인</h3>
                         <div class="col-lg-4"></div>
-                        <div class="form-group">
-                          <input type="email" class="form-control" placeholder="아이디" name="id" maxlength="15">
+                        <div class="inputBox">
+                          <div class="form-group">
+                            <label for="userId" id="idLabel" class="labLogin">ID</label>
+                            <input type="email" class="form-control" name="id" maxlength="15">
+                          </div>
+                          <div class="form-group">
+                            <label for="pw" id="pwdLabel" class="labLogin">Password</label>
+                            <input type="password" class="form-control" name="pass" maxlength="20">
+                          </div>
                         </div>
-                        <div class="form-group">
-                          <input type="password" class="form-control" placeholder="비밀번호" name="pass" maxlength="20">
-                        </div>
-                        <a href="#"><span class="btn btn-primary form-control" onclick="check_input()">로그인</span></a>
+                        <a href="#" class="btnLogin"><span class="btnInoutLogin" onclick="check_input()"><p>로그인</p></span></a>
                         <a href=join.php>회원가입</a>
                         <div class="loginSet">
                           <div class="checkId">
@@ -118,10 +122,12 @@
                         </div>
                       </form>
                     </div>
+                    </div>
 		            	</div>
 	          	</div>
+              <div class="contentHolder"></div>
           </div>
-          <div class="contentHolder"></div>
+
         </div>
 	    	<script src="./js/login.js"></script>
       </div>

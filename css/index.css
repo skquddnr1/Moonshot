@@ -155,16 +155,16 @@ fieldset {
   color: #b2b2b2;
 }
 .inputBox {
-  display: block;
-  margin: 5px 15px 0 0;
+  display: inline-block;
+  margin: 10px 15px 0 10px;
 }
-.inpTxt {
+.form-control {
   width: 100%;
   height: 30px;
   border-radius: 5px;
   border: 1px solid #f2f2f2;
 }
-.btnInoutLogin {
+.btnLogin {
   display: inline-block;
   position: absolute;
   margin-top: 10px;
@@ -173,6 +173,13 @@ fieldset {
   background-color: white;
   border-radius: 5px;
   border: 1px solid #f2f2f2;
+}
+.btnInoutLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .btnInoutLogin:hover {
   cursor: pointer;
