@@ -66,9 +66,10 @@
           <div class="loginArea">
               <div id="login" class="loginWrap ">
                   <div class="login">
+                    <!--
                     <form id="loginProcess" autocomplete="off" method = "post" action="loginCheck">
-              <input type="hidden" name="standard" value="index.html">
-              <input type="hidden" name="loginToken"  value="">
+                      <input type="hidden" name="standard" value="index.html">
+                      <input type="hidden" name="loginToken"  value="">
                       <fieldset>
                         <legend class="blind">로그인</legend>
                         <div class="loginInput">
@@ -92,35 +93,32 @@
                           </div>
                         </div>
                       </fieldset>
-                    </form>
-              
-        <!-- 로그인 후 -->
-        <!--
-        <div class="container"> 
-					<form name="loginSbmt" id="loginSbmt" method="post" action="loginOk.php">
-						<h3 >로그인</h3>
-						<div class="col-lg-4"></div>
-						<div class="form-group">
-							<input type="email" class="form-control" placeholder="아이디" name="id" maxlength="15">
-						</div>
-						<div class="form-group">
-							<input type="password" class="form-control" placeholder="비밀번호" name="pass" maxlength="20">
-						</div>
-						
-						<a href="#"><span class="btn btn-primary form-control" onclick="check_input()">로그인</span></a>
-            <a href=join.php>회원가입</a>
-            <div class="loginSet">
-              <div class="checkId">
-                <span class="checkbox">
-                  <input type="checkbox" id="idsave" class="icoCheck" name="idCookie">
-                  <em class="checkmark"></em>
-                  <label for="idsave">ID 저장</label>
-            </span>
-            </div>
-            </div>
-					</form>
-				</div>
-        -->
+                    </form>     -->
+                  <!-- 로그인 후 -->
+                <div class="container"> 
+                  <form name="loginSbmt" id="loginSbmt" method="post" action="loginOk.php">
+                    <h3 >로그인</h3>
+                    <div class="col-lg-4"></div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="아이디" name="id" maxlength="15">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" placeholder="비밀번호" name="pass" maxlength="20">
+                    </div>
+                    
+                    <a href="#"><span class="btn btn-primary form-control" onclick="check_input()">로그인</span></a>
+                    <a href=join.php>회원가입</a>
+                    <div class="loginSet">
+                      <div class="checkId">
+                        <span class="checkbox">
+                          <input type="checkbox" id="idsave" class="icoCheck" name="idCookie">
+                          <em class="checkmark"></em>
+                          <label for="idsave">ID 저장</label>
+                    </span>
+                    </div>
+                    </div>
+                  </form>
+                </div>
 		        	</div>
 	          	</div>
           </div>
