@@ -19,18 +19,18 @@
   	<link rel="stylesheet" href="./style.css">
 	</head>
 	<body>
-		<!-- 비밀 글 모달창 양식 구현-->
+		<!-- 비밀 글 모달창 양식 구현--
 		<div class="modal fade" id="modal_div">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<!-- header -->
+					<!-- header --
 					<div class="modal-header">
-						<!-- 닫기(x) 버튼 -->
+						<!-- 닫기(x) 버튼 --
 						<button type="button" class="close" data-dismiss="modal">×</button>
-						<!-- header title -->
+						<!-- header title --
 						<h4 class="modal-title"><b>비밀글 입니다.</b></h4>
 					</div>
-					<!-- body -->
+					<!-- body --
 					<div class="modal-body">
 						<form method="post" id="modal_form" data-action="./ck_read.php?idx=">
 							<p>비밀번호  <input type="password" name="pw_chk" /> <input type="submit" class="btn btn-primary" value="확인" /></p>
@@ -43,7 +43,7 @@
 		<div class="container">
 			<div id="board_area"> 
 			  <h1><b>자유게시판</b></h1><br>
-			  <h4>자유롭게 글을 쓸 수 있는 게시판입니다.</h4><br>
+			  <h4>커뮤니티</h4><br>
 			  <table class="table table-striped" style="text-align: center; border: 1px solid #ddddda">
 			  	<tr>
 					<th style="background-color: #eeeeee; text-align: center;">번호</th>
