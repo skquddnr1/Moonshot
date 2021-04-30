@@ -116,9 +116,9 @@
                 </div>
 			        </div>
             </div>
-            <div class="contentHolder"></div>
 	    	    <script src="./js/login.js"></script>
           </div>
+          <div class="contentHolder"></div>
         </div>
       </div>
     </div>
