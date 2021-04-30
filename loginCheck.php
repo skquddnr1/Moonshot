@@ -4,6 +4,7 @@
 		echo("
 			<script>
 			alert('로그인 후 이용해 주세요! ');
+			location.href='list.php'; // list.php
 			</script>
 			");
 	}
