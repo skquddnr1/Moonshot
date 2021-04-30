@@ -31,7 +31,7 @@
             <li class="navItem"><a href="#">TOURNAMENT</a></li>
             <li class="navItem"><a href="#">TEAM</a></li>
             <li class="navItem"><a href="#">JOB INFO</a></li>
-            <li class="navItem"><a href="#">NEWS</a></li>
+            <li class="navItem"><a href="test.php">NEWS</a></li>
             <li class="navItem"><a href="list.php">COMMUNITY</a></li>
           </ul>
           <ul class="snsNav">
