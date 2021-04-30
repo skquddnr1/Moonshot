@@ -28,7 +28,7 @@
     echo "
 	      <script>
     	      alert('회원가입이 완료 되었습니다.');
-	          location.href = 'index.html';
+	          location.href = 'index.php';
 	      </script>
 	  ";
 ?>

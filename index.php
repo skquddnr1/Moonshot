@@ -1,12 +1,17 @@
+<?php
+	include_once "./config.php";
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MOONSHOT e-sports</title>
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div class="wrap">
@@ -14,7 +19,7 @@
       <div class="wrapper">
         <div >
           <h1 class="logo">
-            <a href="index.html" class="logoMain">
+            <a href="index.php" class="logoMain">
               <img src="./files/images/logo0.png" class="logoImage">
               <span class="hidden">MOONSHOT e-sports</span>
             </a>
@@ -95,7 +100,10 @@
                       </fieldset>
                     </form>     -->
                   <!-- 로그인 후 -->
-                    <div class="loginInput">
+                  <?php 
+			            	if(!$userid){
+			            ?>    
+                  <div class="loginInput">
                       <form name="loginSbmt" id="loginSbmt" method="post" action="loginOk.php">
                         <h3 class="hidden">로그인</h3>
                         <div class="col-lg-4"></div>
@@ -121,13 +129,23 @@
                           </div>
                         </div>
                       </form>
-                    </div>
-                    </div>
-		            	</div>
-	          	</div>
+                      <?php 
+			                	}else if($userid){	
+					              $logged = $username."(".$userid.")";
+			                ?>
+				<ul class="#">
+					<li class="#">
+						<a href="#" class="#" data-toggle="#" role="button" 
+						aria-haspopup="true" aria-expanded="false"><b><?=$logged ?></b>님의 회원관리<span class="caret"></span></a>
+						<ul class="#">
+							<li><a href="logout.php">로그아웃</a></li>
+						</ul>
+					</li>
+				</ul>
+			<?php }?>
               <div class="contentHolder"></div>
           </div>
-
+			</div>
         </div>
 	    	<script src="./js/login.js"></script>
       </div>

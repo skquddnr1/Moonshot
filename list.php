@@ -12,14 +12,42 @@
 <html lang="ko">
 	<head>
 	<meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
- 	 <title>MOONSHOT e-sports</title>
- 	 <link rel="stylesheet" href="./css/index.css">
-  	<link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MOONSHOT e-sports</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<!-- 비밀 글 모달창 양식 구현--
+	<div class="wrap">
+    <div id="header">
+      <div class="wrapper">
+        <div >
+          <h1 class="logo">
+            <a href="index.php" class="logoMain">
+              <img src="./files/images/logo0.png" class="logoImage">
+              <span class="hidden">MOONSHOT e-sports</span>
+            </a>
+          </h1>
+        </div>
+        <nav id="gnb">
+          <ul class="groupNav">
+            <li class="navItem"><a href="#">ABOUT MS</a></li>
+            <li class="navItem"><a href="#">TOURNAMENT</a></li>
+            <li class="navItem"><a href="#">TEAM</a></li>
+            <li class="navItem"><a href="#">JOB INFO</a></li>
+            <li class="navItem"><a href="#">NEWS</a></li>
+            <li class="navItem"><a href="list.php">COMMUNITY</a></li>
+          </ul>
+          <ul class="snsNav">
+            <div class="snsLink"></div>
+          </ul>
+        </nav>
+      </div>
+    </div>	
+	<!-- 비밀 글 모달창 양식 구현--
 		<div class="modal fade" id="modal_div">
 			<div class="modal-dialog">
 				<div class="modal-content">

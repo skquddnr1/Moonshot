@@ -12,6 +12,8 @@
   <title>MOONSHOT e-sports</title>
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	</head>
 	<body>
@@ -20,7 +22,7 @@
       <div class="wrapper">
         <div >
           <h1 class="logo">
-            <a href="index.html" class="logoMain">
+            <a href="index.php" class="logoMain">
               <img src="./files/images/logo0.png" class="logoImage">
               <span class="hidden">MOONSHOT e-sports</span>
             </a>
@@ -44,7 +46,7 @@
 	</nav>
 		<div class="container">
 			<div id="board_write">
-                <form action="write_ok.php" method="post">
+                <form action="writeOk.php" method="post">
 					<table class="table table-striped" style="text-align: center; border: 1px solid #ddddda">
 						<thead>
 							<tr>

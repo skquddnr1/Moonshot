@@ -2,14 +2,25 @@
 	include_once "./config.php";
 ?>
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 	<head>
-		
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MOONSHOT e-sports</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="container">
+		<div class="container"> 
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4">
+				<div class="jumbotron" style="padding-top: 20px;">
 					<form name="join"  method="post" action="joinOk.php">
-						<h3>회원가입 화면</h3>
+						<h3 style="text-align: center">회원가입 화면</h3>
+						<div class="col-lg-4"></div>
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="아이디" name="id" id="id" maxlength="15">
 						</div>
@@ -28,7 +39,7 @@
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="이름" name="name" id="name" maxlength="20">
 						</div>
-						<div class="form-group" >
+						<div class="form-group" style="text-align: center">
 							<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-primary active">
 									<input type="radio" name="gender" id="gender1" autocomplete="off" value="남자" checked>남자
@@ -41,11 +52,12 @@
 						<div class="form-group">
 							<input type="tel" class="form-control" placeholder="전화번호" name="phone" id="phone" maxlength="20">
 						</div>	
+						<div class="col-lg-4"></div>
 						<div class="form-group">
 							<input type="email" class="form-control" placeholder="이메일" name="email" id="email" maxlength="80">
 						</div>
 					
-						<span class="btn btn-primary form-control" onclick="check_input()">회원가입</span>&nbsp;
+						<a href=#><span class="btn btn-primary form-control" onclick="check_input()">회원가입</span></a>&nbsp;
 						<span class="btn btn-primary form-control" onclick="reset_form()">초기화</span>
 						
 					</form>
@@ -81,7 +93,7 @@
 			/* 아이디 중복 체크(비동기통신) */
 			function checkIdAjax(){//id값을 post로 전송해서 서버와 통신하여 중복 결과 json 형태로 받아오는 함수
 				$.ajax({				//비동기통신방법, 객체로 보낼때{}사용
-					url : "./ajax/check_id.php",
+					url : "./checkId.php",
 					type : "post",
 					dataType : "json",
 					data : {
