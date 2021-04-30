@@ -69,91 +69,63 @@
         </div>
         <div class="contentRight">
           <div class="loginArea">
-              <div id="login" class="loginWrap ">
-                  <div class="login">
-                    <!--
-                    <form id="loginProcess" autocomplete="off" method = "post" action="loginCheck">
-                      <input type="hidden" name="standard" value="index.html">
-                      <input type="hidden" name="loginToken"  value="">
-                      <fieldset>
-                        <legend class="blind">로그인</legend>
-                        <div class="loginInput">
-                          <div class="inputBox">
-                            <label for="userId" id="idLabel" class="labLogin">ID</label>
-                            <input type="text" id="userId" name="userId" class="inpTxt" maxlength="50"  value="">
-                          </div>
-                          <div class="inputBox">
-                            <label for="pw" id="pwdLabel" class="labLogin">Password</label>
-                            <input type="password" id="pw" name="pw" class="inpTxt" maxlength="32" >
-                          </div>
-                        </div>
-                        <button type="button" id="loginOk" class="btnInoutLogin">로그인</button>
-                        <div class="loginSet">
-                          <div class="checkId">
-                            <span class="checkbox">
-                              <input type="checkbox" id="idsave" class="icoCheck" name="idCookie">
-                              <em class="checkmark"></em>
-                              <label for="idsave">ID 저장</label>
-                            </span>
-                          </div>
-                        </div>
-                      </fieldset>
-                    </form>     -->
-                  <!-- 로그인 후 -->
+            <div id="login" class="loginWrap ">
+              <div class="login">
+                <?php 
+			            if(!$userid){
+			          ?>    
+                <div class="loginInput">
+                  <form name="loginSbmt" id="loginSbmt" method="post" action="loginOk.php">
+                    <h3 class="hidden">로그인</h3>
+                    <div class="col-lg-4"></div>
+                    <div class="inputBox">
+                      <div class="form-group">
+                        <label for="userId" id="idLabel" class="labLogin">ID</label>
+                        <input type="email" class="form-control" name="id" maxlength="15">
+                      </div>
+                      <div class="form-group">
+                        <label for="pw" id="pwdLabel" class="labLogin">Password</label>
+                        <input type="password" class="form-control" name="pass" maxlength="20">
+                      </div>
+                    </div>
+                      <a href="#" class="btnLogin"><span class="btnInoutLogin" onclick="check_input()"><p>로그인</p></span></a>
+                      <a href=join.php><p>회원가입</p></a>
+                    <div class="loginSet">
+                      <div class="checkId">
+                        <span class="checkbox">
+                          <input type="checkbox" id="idsave" class="icoCheck" name="idCookie">
+                          <em class="checkmark"></em>
+                          <label for="idsave">ID 저장</label>
+                        </span>
+                      </div>
+                    </div>
+                  </form>
                   <?php 
-			            	if(!$userid){
-			            ?>    
-                  <div class="loginInput">
-                      <form name="loginSbmt" id="loginSbmt" method="post" action="loginOk.php">
-                        <h3 class="hidden">로그인</h3>
-                        <div class="col-lg-4"></div>
-                        <div class="inputBox">
-                          <div class="form-group">
-                            <label for="userId" id="idLabel" class="labLogin">ID</label>
-                            <input type="email" class="form-control" name="id" maxlength="15">
-                          </div>
-                          <div class="form-group">
-                            <label for="pw" id="pwdLabel" class="labLogin">Password</label>
-                            <input type="password" class="form-control" name="pass" maxlength="20">
-                          </div>
-                        </div>
-                        <a href="#" class="btnLogin"><span class="btnInoutLogin" onclick="check_input()"><p>로그인</p></span></a>
-                        <a href=join.php><p>회원가입</p></a>
-                        <div class="loginSet">
-                          <div class="checkId">
-                            <span class="checkbox">
-                              <input type="checkbox" id="idsave" class="icoCheck" name="idCookie">
-                              <em class="checkmark"></em>
-                              <label for="idsave">ID 저장</label>
-                            </span>
-                          </div>
-                        </div>
-                      </form>
-                      <?php 
-			                	}else if($userid){	
-					              $logged = $username."(".$userid.")";
-			                ?>
-				<ul class="#">
-					<li class="#">
-						<a href="#" class="#" data-toggle="#" role="button" 
-						aria-haspopup="true" aria-expanded="false"><b><?=$logged ?></b>님의 회원관리<span class="caret"></span></a>
-						<ul class="#">
-							<li><a href="logout.php">로그아웃</a></li>
-						</ul>
-					</li>
-				</ul>
-			<?php }?>
-              <div class="contentHolder"></div>
+			              }else if($userid){	
+					          $logged = $username."(".$userid.")";
+			            ?>
+				          <ul class="#">
+					          <li class="#">
+						          <a href="#" class="#" data-toggle="#" role="button" aria-haspopup="true" aria-expanded="false"><b><?=$logged ?></b>님의 회원관리<span class="caret"></span></a>
+						          <ul class="#">
+							          <li><a href="logout.php">로그아웃</a></li>
+						          </ul>
+					          </li>
+				          </ul>
+			            <?php }?>
+                </div>
+			        </div>
+            </div>
+            <div class="contentHolder"></div>
+	    	    <script src="./js/login.js"></script>
           </div>
-			</div>
         </div>
-	    	<script src="./js/login.js"></script>
       </div>
     </div>
-    </div>
     <div id="footer"></div>
-  <script src="./vue/vue.js"></script>
-  <script src="./vue/vue-router.js"></script>
-  <script src="./js/main.js"></script>
+    <script src="./vue/vue.js"></script>
+    <script src="./vue/vue-router.js"></script>
+    <script src="./js/main.js"></script>
+  </div>
 </body>
 </html>
