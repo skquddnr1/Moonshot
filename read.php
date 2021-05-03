@@ -108,6 +108,8 @@
 				?>
 						<a href="update.php?idx=<?=$board['idx']?>" class="btn btn-primary">수정</a>
 						<a href="delete.php?idx=<?=$board['idx']?>" class="btn btn-primary">삭제</a>
+						<a href="recommend.php?idx=<?=$board['idx']?>" class ="btn btn-primary">추천</a>
+						<p>추천수<p><p><?=$board['recommend']?><p>
 				<?php } ?>
 			</div>
 		</div>
