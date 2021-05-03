@@ -44,7 +44,7 @@
       <div class="container">
         <div class="contentLeft">
           <div class="leagueBanner">
-            <a href="#">
+            <a href="#" >
               <img src="./files/images/banner0.png" alt="리그배너1"  class="bannerSlide">
             </a>
           </div>
@@ -122,7 +122,22 @@
         </div>
       </div>
     </div>
-    <div id="footer"></div>
+    <div id="footer">
+      <nav id="footerText">
+        <ul class="footerTop">
+          <li>제휴문의</li>
+          <li>개인정보처리방침</li>
+          <li>서비스 이용 약관</li>
+          <li>FAQ</li>
+        </ul>
+        <ul class="footerBottom">
+          <li>문샷이스포츠</li>
+          <li>대표 . . . </li>
+          <li>주소 . . . </li>
+          <li>사업자등록번호</li>
+        </ul>
+      </nav>
+    </div>
     <script src="./vue/vue.js"></script>
     <script src="./vue/vue-router.js"></script>
     <script src="./js/main.js"></script>

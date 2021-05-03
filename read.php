@@ -41,8 +41,9 @@
   <title>MOONSHOT e-sports</title>
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/reply.css">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
 	</head>
 	<body>
@@ -100,6 +101,8 @@
 						</tr>
 					</tbody>
 				</table>
+				
+				
 				<!-- 목록, 수정, 삭제 -->
 				<a href="list.php" class="btn btn-primary">목록</a>
 				<!-- 자신의 글만 수정, 삭제 할 수 있도록 설정-->
@@ -150,14 +153,14 @@
 							<div class="modal-body">
 							<!-- 회원일 때 댓글 삭제 -->
 							<?php if($role=="USER") {?>
-								<form method="post" id="modal_form1" action="reply_delete.php">
+								<form method="post" id="modal_form1" action="replyDelete.php">
 									<input type="hidden" name="rno" value="<?=$reply['idx'];?>" /><input type="hidden" name="b_no" value="<?=$bno;?>">		
 									<p>비밀번호  <input type="password" name="pw" /> <input type="submit" class="btn btn-primary" value="확인" /></p>
 								</form>
 								
 							<!-- 관리자일 때 댓글 삭제 -->
 							<?php } else if($role=="ADMIN") {?>
-								<form method="post" id="modal_form2" action="reply_delete.php">
+								<form method="post" id="modal_form2" action="replyDelete.php">
 									<input type="hidden" name="rno" value="<?=$reply['idx'];?>" /><input type="hidden" name="b_no" value="<?=$bno;?>">
 									<input type="hidden" name="pw" value="">		
 									<p>삭제하시겠습니까? <input type="submit" class="btn btn-primary" value="확인" /></p>

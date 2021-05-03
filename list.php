@@ -17,6 +17,7 @@
   <title>MOONSHOT e-sports</title>
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/reply.css">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
@@ -155,6 +156,14 @@
 			          <td width="120"><?=$board['name'];?></td>
 			          <td width="100"><?=$board['date'];?></td>
 			          <td width="100"><?=$board['hit']; ?></td>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+					  <td width="100"><?=$board['recom_count']; ?></td>
+=======
+					  <td width="100"><?=$board['recommend']; ?></td>
+>>>>>>> bc90f22d53bebf047f3807581811cf0e5cc4b1e1
+>>>>>>> c4db471180189cfbd6e9992e963228b692024e73
 			        </tr>
 			      </tbody>
 			      <?php } ?>
