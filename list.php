@@ -79,7 +79,6 @@
 					<th style="background-color: #eeeeee; text-align: center;">작성자</th>
 					<th style="background-color: #eeeeee; text-align: center;">작성일</th>
 					<th style="background-color: #eeeeee; text-align: center;">조회수</th>
-					<th style="background-color: #eeeeee; text-align: center;">추천수</th>
 			    </tr>
 			    
 			    <!-- 페이징 구현 -->
@@ -156,7 +155,6 @@
 			          <td width="120"><?=$board['name'];?></td>
 			          <td width="100"><?=$board['date'];?></td>
 			          <td width="100"><?=$board['hit']; ?></td>
-					  <td width="100"><?=$board['recommend']; ?></td>
 			        </tr>
 			      </tbody>
 			      <?php } ?>
@@ -203,7 +201,7 @@
 			      <a href="write.php"><button class="btn btn-primary pull-right" >글쓰기</button></a>
 			    </div>
 			  <div id="search_box" style="text-align: center; padding-top: 50px;">
-			  	<form action="searchResult.php" method="get">
+			  	<form action="search_result.php" method="get">
 			  		<select name="category">
 			  			<option value="title">제목</option>
 			  			<option value="name">글쓴이</option>
