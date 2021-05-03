@@ -157,7 +157,11 @@
 			          <td width="120"><?=$board['name'];?></td>
 			          <td width="100"><?=$board['date'];?></td>
 			          <td width="100"><?=$board['hit']; ?></td>
+<<<<<<< HEAD
 					  <td width="100"><?=$board['recom_count']; ?></td>
+=======
+					  <td width="100"><?=$board['recommend']; ?></td>
+>>>>>>> bc90f22d53bebf047f3807581811cf0e5cc4b1e1
 			        </tr>
 			      </tbody>
 			      <?php } ?>
