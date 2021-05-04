@@ -113,6 +113,14 @@
 						<a href="delete.php?idx=<?=$board['idx']?>" class="btn btn-primary">삭제</a>
 				<?php } ?>
 			</div>
+			<script>
+				const idx = <?=$board['idx']?>;
+				const recommendcount = <?=$board['recom_count']?>;
+			</script>
+			<div  id="recommendshow">
+				<button @click="recommend ++">추천</button>
+            	<p>{{ recommend }}</p>
+      		</div>
 		</div>
 		<!-- 댓글 불러오기 -->
 		<div class="container">
@@ -186,6 +194,9 @@
 			</div>
 		</div>
 		<!-- 댓글 불러오기 끝 -->
+		<script src="./vue/vue.js"></script>
+    	<script src="./vue/vue-router.js"></script>
+		<script src="./js/read.js"></script>
 		<script src="./js/login.js"></script>
 		<script src="./js/event.js"></script>
 	</body>
