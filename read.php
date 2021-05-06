@@ -113,14 +113,16 @@
 						<a href="delete.php?idx=<?=$board['idx']?>" class="btn btn-primary">삭제</a>
 				<?php } ?>
 			</div>
-			<script>
-				const idx = <?=$board['idx']?>;
-				const recommendcount = <?=$board['recom_count']?>;
-			</script>
-			<div  id="recommendshow">
-				<button @click="recommend ++">추천</button>
-            	<p>{{ recommend }}</p>
-      		</div>
+			<form action="recommend.php" method="post">
+				<script>
+					const idx = <?=$board['idx']?>;
+					const recommendcount = <?=$board['recom_count']?>;
+				</script>
+				<div  id="recommendshow">
+					<button type="submit" @click="recommend ++">추천</button>
+					<p>{{ recommend }}</p>
+				</div>
+			</form>
 		</div>
 		<!-- 댓글 불러오기 -->
 		<div class="container">

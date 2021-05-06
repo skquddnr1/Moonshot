@@ -206,7 +206,7 @@
 			      <a href="write.php"><button class="btn btn-primary pull-right" >글쓰기</button></a>
 			    </div>
 			  <div id="search_box" style="text-align: center; padding-top: 50px;">
-			  	<form action="search_result.php" method="get">
+			  	<form action="searchResult.php" method="get">
 			  		<select name="category">
 			  			<option value="title">제목</option>
 			  			<option value="name">글쓴이</option>
