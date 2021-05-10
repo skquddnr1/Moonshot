@@ -106,7 +106,7 @@
 			            ?>
 				          <ul class="#">
 					          <li class="#">
-						          <a href="#" class="#" data-toggle="#" role="button" aria-haspopup="true" aria-expanded="false"><b><?=$logged ?></b>님의 회원관리<span class="caret"></span></a>
+						          <a href="loginManage.php" class="#" data-toggle="#" role="button" aria-haspopup="true" aria-expanded="false"><b><?=$logged ?></b>님의 회원관리<span class="caret"></span></a>
 						          <ul class="#">
 							          <li><a href="logout.php">로그아웃</a></li>
 						          </ul>
